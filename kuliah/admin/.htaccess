@@ -1,0 +1,9 @@
+options All -Indexes
+
+RewriteEngine On 
+
+RewriteRule ^([-a-z]*)$ index.php?include=$1 [L]
+
+RewriteRule ^([-a-z]*)?gagal=([A-Za-z]*)$ index.php?include=$1&gagal=$2 [L]
+
+RewriteRule ^([-a-z]*)_notif=([A-Za-z]*)$ index.php?include=$1&notif=$2 [L]
